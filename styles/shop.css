@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.montserrat {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  font-family: montserrat;
+}
+
+@font-face {
+  font-family: "caveat";
+  src: url("../fonts/cavet/static/Caveat-Regular.ttf");
+}
+
+p[name="brand"],
+h1[name="all"] {
+  font-family: caveat;
+}
+
+.button-in {
+  background-image: linear-gradient(
+    to right,
+    #ffd700,
+    #ff8c00,
+    #c11171,
+    #000080
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
