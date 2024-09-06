@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="x-icon" href="./images/logo.png" />
+    <title>Login in</title>
+  </head>
+  <body>
+    <div id="form">
+      <div class="header">
+        <img id="#logo" src="./images/logo.png" alt="Logo" />
+        <div class="logo_text">
+          <p>Artistic Haven</p>
+        </div>
+      </div>
+      <h1>Welcome Back!</h1>
+      <p>Enter to your dashboard of tasks</p>
+      <form>
+        <div class="input-place">
+          <label for="Email">Email<span>*</span> </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your mail address"
+          />
+        </div>
+        <div class="input-place">
+          <label for="password">Password<span>*</span></label>
+          <input type="password" name="password" placeholder="Enter password" />
+        </div>
+        <div class="more-info">
+          <div>
+            <input type="checkbox" />
+            <label>Remember me</label>
+          </div>
+          <a href="#">Forgot your password?</a>
+        </div>
+        <input type="submit" value="log in" />
+      </form>
+      <div class="google-log">
+        <p><span>Or,Login with</span></p>
+        <hr />
+      </div>
+      <button><i class="fa-brands fa-google"></i>Sign up with Google</button>
+      <p id="register">Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+    <div id="side-img"></div>
+  </body>
+</html>

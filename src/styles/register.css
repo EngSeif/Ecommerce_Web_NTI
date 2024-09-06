@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "caveat";
+  src: url("../fonts/cavet/static/Caveat-Regular.ttf");
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: "Roboto";
+}
+
+/*! Login Form */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  width: 40%;
+  padding: 0 7%;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header > img {
+  width: 3rem;
+}
+
+.logo_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_text > p {
+  font-size: 1.5rem;
+  font-family: caveat;
+  font-weight: 600;
+  color: black;
+}
+
+.input-place {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px 5px 0;
+}
+
+label {
+  padding: 5px;
+}
+
+label > span {
+  color: red;
+}
+.input-place > input {
+  height: 20px;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  font-size: 1.025rem;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 10%;
+  background-color: #5138ee;
+  font-size: 1.125rem;
+  color: #ffffff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  transition: 0.25s;
+  margin: 3% 0;
+}
+
+#register {
+  text-align: center;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+  transition: 0.25s;
+  color: white;
+}
+
+#side-img {
+  width: 60%;
+  height: 100%;
+  background-image: url(../images/sign.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .more-info {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 755px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #form {
+    position: absolute;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 8px;
+    height: auto;
+  }
+  #form > * {
+    width: 80%;
+  }
+  #side-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  * {
+    font-size: 0.8rem;
+  }
+}
