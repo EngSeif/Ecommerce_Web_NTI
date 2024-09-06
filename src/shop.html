@@ -6,7 +6,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="./styles/shop.css" />
     <link rel="shortcut icon" type="x-icon" href="./images/logo.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -69,66 +69,19 @@
         <h1 name="all" class="text-7xl pt-8 pb-4">All Products</h1>
         <div class="flex justify-between">
           <h2>Showing All 12 Products</h2>
-          <select class="border-2 border-gray-500 p-1 rounded-lg">
+          <select id="Selector" class="border-2 border-gray-500 p-1 rounded-lg">
             <option selected disabled>Select Your Catecogry</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="all">All</option>
           </select>
         </div>
         <div
+          id="ProductList"
           class="listProduct Products-container sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid grid-cols-1 gap-4 w-full py-9"
         >
           <!--================================== Card Product  =========================-->
 
           <!--================================== END Card Product  =========================-->
 
-          <div
-            class="card bg-white text-grey-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden w-fit"
-          >
-            <img
-              class="w-full object-cover"
-              src="./images/test2.jpeg"
-              alt="image"
-            />
-            <div class="p-5 flex flex-col gap-3">
-              <div>
-                <span class="px-3 py-1 rounded-full bg-[#FFF8EA] text-xs"
-                  >Painting Type</span
-                >
-                <span class="px-3 py-1 rounded-full bg-[#FFF8EA] text-xs"
-                  >Artist</span
-                >
-              </div>
-              <h2 class="text-3xl font-bold">Picasso</h2>
-
-              <div>
-                <span>$ 120.00</span>
-                <div>
-                  <span class="text-xs line-through">$ 150.00</span>
-                  <span
-                    class="text-xs text-white bg-[#11B78F] px-3 py-1 rounded-full"
-                    >Save 20%</span
-                  >
-                </div>
-              </div>
-              <div class="flex gap-2 items-center">
-                <button
-                  class="px-3 py-1 button-in text-white rounded-lg flex items-center gap-2 justify-center"
-                >
-                  <ion-icon name="cart-outline" class="text-lg"></ion-icon>
-                  <span>Add to cart</span>
-                </button>
-
-                <ion-icon
-                  name="heart"
-                  class="heart text-xl duration-50"
-                ></ion-icon>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
