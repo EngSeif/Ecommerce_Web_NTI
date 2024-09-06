@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <link rel="shortcut icon" type="x-icon" href="./images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-[#FFF8EA]">
+    <header>
+      <nav
+        class="flex items-center justify-between w-[92%] mx-auto md:py-2 py-1"
+      >
+        <div name="Nav-Logo" class="flex items-center sm:gap-2 gap-1">
+          <img src="./images/logo.png" class="w-10 mx-2" />
+          <p name="brand" class="sm:text-2xl text-base">Artistic Haven</p>
+        </div>
+        <div
+          class="Menu-items md:bg-transparent bg-[#FFF8EA] drop-shadow-lg md:drop-shadow-none md:static absolute md:min-h-fit md:justify-center min-h-[40vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul class="flex md:flex-row flex-col md:items-center gap-[6vw]">
+            <li>
+              <a href="#" class="hover:text-[#ff8a5f] duration-50">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#ff8a5f] duration-50">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#ff8a5f] duration-50">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#ff8a5f] duration-50"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-------------------------------------- icon Cart ------------------------------------->
+
+        <div class="flex items-center sm:gap-3 gap-2 mr-2 text-2xl">
+          <div class="icon-cart">
+            <ion-icon id="cart" name="cart" class="cursor-pointer"></ion-icon>
+            <span>0</span>
+          </div>
+
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-icon
+            id="Menu-button"
+            name="menu"
+            c
+            class="cursor-pointer text-3xl md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <section class="w-full">
+      <div class="w-[92%] mx-auto px-2">
+        <h1 name="all" class="text-7xl pt-8 pb-4">All Products</h1>
+        <div class="flex justify-between">
+          <h2>Showing All 12 Products</h2>
+          <select class="border-2 border-gray-500 p-1 rounded-lg">
+            <option selected disabled>Select Your Catecogry</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div
+          class="listProduct Products-container sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid grid-cols-1 gap-4 w-full py-9"
+        >
+          <!--================================== Card Product  =========================-->
+
+          <!--================================== END Card Product  =========================-->
+
+          <div
+            class="card bg-white text-grey-700 w-72 min-h-[10rem] shadow-lg rounded-md overflow-hidden w-fit"
+          >
+            <img
+              class="w-full object-cover"
+              src="./images/test2.jpeg"
+              alt="image"
+            />
+            <div class="p-5 flex flex-col gap-3">
+              <div>
+                <span class="px-3 py-1 rounded-full bg-[#FFF8EA] text-xs"
+                  >Painting Type</span
+                >
+                <span class="px-3 py-1 rounded-full bg-[#FFF8EA] text-xs"
+                  >Artist</span
+                >
+              </div>
+              <h2 class="text-3xl font-bold">Picasso</h2>
+
+              <div>
+                <span>$ 120.00</span>
+                <div>
+                  <span class="text-xs line-through">$ 150.00</span>
+                  <span
+                    class="text-xs text-white bg-[#11B78F] px-3 py-1 rounded-full"
+                    >Save 20%</span
+                  >
+                </div>
+              </div>
+              <div class="flex gap-2 items-center">
+                <button
+                  class="px-3 py-1 button-in text-white rounded-lg flex items-center gap-2 justify-center"
+                >
+                  <ion-icon name="cart-outline" class="text-lg"></ion-icon>
+                  <span>Add to cart</span>
+                </button>
+
+                <ion-icon
+                  name="heart"
+                  class="heart text-xl duration-50"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------- Cart Toggel ----------------------------->
+      <div
+        id="Shop-cart"
+        class="cartTab z-20 fixed top-0 right-0 h-screen md:w-4/12 w-9/12 bg-white shadow-2xl hidden"
+      >
+        <div class="w-[92%] mx-auto flex flex-col items-between h-full">
+          <div class="flex justify-between items-center pt-5 pb-2 border-b-2">
+            <p>Shopping Cart</p>
+            <ion-icon
+              name="close-outline"
+              id="close"
+              class="text-2xl cursor-pointer"
+            ></ion-icon>
+          </div>
+
+          <!------------------ Ineer CArt Product ----------------------------->
+
+          <div class="listCart w-full h-full flex flex-col"></div>
+
+          <!------------------ End Ineer CArt Product ----------------------------->
+          <div class="py-6">
+            <div>
+              <div class="flex border-t-2 pt-2 justify-between items-center">
+                <p>SubTotal</p>
+                <p>$ 0.00</p>
+              </div>
+            </div>
+            <div class="text-center py-2">
+              <a href=""
+                ><p
+                  class="w-full bg-[#FFEACE] py-1 rounded-lg border-2 border-solid border-[#FFEACE] hover:bg-transparent"
+                >
+                  Checkout
+                </p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="Shop-cart-layer"
+        class="z-10 hidden fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-30"
+      ></div>
+    </section>
+    <footer class="bg-[#ffeace] w-full">
+      <div class="flex justify-between items-center py-6 w-[94%] mx-auto">
+        <div name="Nav-Logo" class="flex items-center">
+          <img src="./images/logo.png" class="w-6 mx-2" />
+          <p name="brand" class="sm:text-2xl text-base">Artistic Haven</p>
+        </div>
+        <div
+          class="flex justify-center align-center gap-3 sm:text-base text-sm"
+        >
+          <a href="#" class="hover:text-[#ff8a5f] duration-50">Home</a>
+          <a href="#" class="hover:text-[#ff8a5f] duration-50">Shop</a>
+          <a href="#" class="hover:text-[#ff8a5f] duration-50">About Us</a>
+          <a href="#" class="hover:text-[#ff8a5f] duration-50">Contact Us</a>
+        </div>
+      </div>
+      <div
+        class="flex justify-between w-[94%] pb-4 mx-auto items-center border-t-2 border-black/50 pt-2"
+      >
+        <p class="sm:text-base text-sm">Copyright © 2024 Artistic Haven.</p>
+        <div class="text-xl flex justify-between gap-2">
+          <ion-icon
+            name="logo-facebook"
+            class="hover:text-[#ff8a5f] duration-50"
+          ></ion-icon>
+          <ion-icon
+            name="logo-youtube"
+            class="hover:text-[#ff8a5f] duration-50"
+          ></ion-icon>
+          <ion-icon
+            name="logo-instagram"
+            class="hover:text-[#ff8a5f] duration-50"
+          ></ion-icon>
+          <ion-icon
+            name="logo-github"
+            class="hover:text-[#ff8a5f] duration-50"
+          ></ion-icon>
+        </div>
+      </div>
+    </footer>
+    <script src="./Scripts/shop.js"></script>
+  </body>
+</html>
