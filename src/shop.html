@@ -51,7 +51,7 @@
         <div class="flex items-center sm:gap-3 gap-2 mr-2 text-2xl">
           <div class="icon-cart">
             <ion-icon id="cart" name="cart" class="cursor-pointer"></ion-icon>
-            <span>0</span>
+            <span id="totalProducts">0</span>
           </div>
 
           <ion-icon name="person-circle-outline"></ion-icon>
@@ -66,12 +66,17 @@
     </header>
     <section class="w-full">
       <div class="w-[92%] mx-auto px-2">
-        <h1 name="all" class="text-7xl pt-8 pb-4">All Products</h1>
+        <h1 id="category" name="all" class="text-7xl pt-8 pb-4">All Products</h1>
         <div class="flex justify-between">
-          <h2>Showing All 12 Products</h2>
+          <h2 id="counter">Showing All 12 Products</h2>
           <select id="Selector" class="border-2 border-gray-500 p-1 rounded-lg">
             <option selected disabled>Select Your Catecogry</option>
             <option value="all">All</option>
+            <option value="anime">Anime</option>
+            <option value="digital">Digital</option>
+            <option value="games">Games</option>
+            <option value="oil">Oil</option>
+            <option value="sea">Sea</option>
           </select>
         </div>
         <div
@@ -81,17 +86,16 @@
           <!--================================== Card Product  =========================-->
 
           <!--================================== END Card Product  =========================-->
-
         </div>
       </div>
 
       <!------------------------------------- Cart Toggel ----------------------------->
       <div
         id="Shop-cart"
-        class="cartTab z-20 fixed top-0 right-0 h-screen md:w-4/12 w-9/12 bg-white shadow-2xl hidden"
+        class="z-20 fixed top-0 right-0 h-full md:w-4/12 w-9/12 bg-white shadow-2xl hidden overflow-auto"
       >
-        <div class="w-[92%] mx-auto flex flex-col items-between h-full">
-          <div class="flex justify-between items-center pt-5 pb-2 border-b-2">
+        <div class="w-[92%] mx-auto flex flex-col h-full justify-between">
+          <div class="flex items-center justify-between pt-5 pb-2 border-b-2">
             <p>Shopping Cart</p>
             <ion-icon
               name="close-outline"
@@ -99,13 +103,9 @@
               class="text-2xl cursor-pointer"
             ></ion-icon>
           </div>
-
-          <!------------------ Ineer CArt Product ----------------------------->
-
-          <div class="listCart w-full h-full flex flex-col"></div>
-
-          <!------------------ End Ineer CArt Product ----------------------------->
-          <div class="py-6">
+          <div id="Cart-container" class="w-full flex flex-col overflow-auto h-fit">
+          </div>
+          <div class="py-6 w-full justify-end">
             <div>
               <div class="flex border-t-2 pt-2 justify-between items-center">
                 <p>SubTotal</p>

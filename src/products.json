@@ -1,195 +1,242 @@
-{
-    "anime" : 
-        [
-            {
-                "artist": "Ethan Collins",
-                "name": "Luifi Blue",
-                "price": "$ 69.00",
-                "src": "./images/anime/a-1.jpeg"
-            },
-            {
-                "artist": "Sophia Ramirez",
-                "name": "Orange Katana",
-                "price": "$ 137.00",
-                "src": "./images/anime/a-2.jpeg"
-            },
-            {
-                "artist": "Liam Patel",
-                "name": "Proud Cat",
-                "price": "$ 50.00",
-                "src": "./images/anime/a-3.jpeg"
-            },
-            {
-                "artist": "Isabella Thompson",
-                "name": "Smiley Luifi",
-                "price": "$ 47.00",
-                "src": "./images/anime/a-4.jpeg"
-            },
-            {
-                "artist": "Noah Martinez",
-                "name": "Big Eye",
-                "price": "$ 67.00",
-                "src": "./images/anime/a-5.jpeg"
-            }
-        ],
-    "city": [
-        {
-            "artist": "Olivia Hernandez",
-            "name": "Evening Last Light",
-            "price": "$ 180.00",
-            "src": "./images/city/c-1.jpeg"
-        },
-        {
-            "artist": "James Parker",
-            "name": "New York Afternoon",
-            "price": "$ 96.00",
-            "src": "./images/city/c-2.jpeg"
-        },
-        {
-            "artist": "Mia Evans",
-            "name": "Future City",
-            "price": "$ 119.00",
-            "src": "./images/city/c-3.jpeg"
-        },
-        {
-            "artist": "Benjamin Wright",
-            "name": "Big Ben",
-            "price": "$ 158.00",
-            "src": "./images/city/c-4.jpeg"
-        }
-        ],
-    "digital": [
-        {
-            "artist": "Amelia Davis",
-            "name": "Colorful Elephant",
-            "price": "$ 175.00",
-            "src": "./images/digital/d-1.jpeg"
-        },
-        {
-            "artist": "Mason Clark",
-            "name": "Alexander The Great",
-            "price": "$ 125.00",
-            "src": "./images/digital/d-2.jpeg"
-        },
-        {
-            "artist": "Lucas Turner",
-            "name": "Dawn First Light",
-            "price": "$ 140.00",
-            "src": "./images/digital/d-3.jpeg"
-        },
-        {
-            "artist": "Harper Lewis",
-            "name": "Glory Tiger",
-            "price": "$ 41.00",
-            "src": "./images/digital/d-4.jpeg"
-        },
-        {
-            "artist": "Elijah Baker",
-            "name": "Last Drink",
-            "price": "$ 119.00",
-            "src": "./images/digital/d-5.jpeg"
-        }
-    ],
-    "games" : [
-        {
-            "artist": "Avery Brooks",
-            "name": "Artistic Spider",
-            "price": "$ 81.00",
-            "src": "./images/games/g-1.jpeg"
-        },
-        {
-            "artist": "Alexander Scott",
-            "name": "Last Solider",
-            "price": "$ 151.00",
-            "src": "./images/games/g-2.jpeg"
-        },
-        {
-            "artist": "Evelyn Ross",
-            "name": "Football Glory",
-            "price": "$ 113.00",
-            "src": "./images/games/g-3.jpeg"
-        },
-        {
-            "artist": "Henry Anderson",
-            "name": "Night Miles",
-            "price": "$ 194.00",
-            "src": "./images/games/g-4.jpeg"
-        }
-    ],
-    "oil": [
-        {
-            "artist": "Lily Foster",
-            "name": "Desperate Night",
-            "price": "$ 36.00",
-            "src": "./images/oil/o-1.jpeg"
-        },
-        {
-            "artist": "Vincent van Gogh",
-            "name": "The Starry Night",
-            "price": "$ 200.00",
-            "src": "./images/oil/o-2.jpeg"
-        },
-        {
-            "artist": "Zoe Bennett",
-            "name": "Lonely Evening",
-            "price": "$ 44.00",
-            "src": "./images/oil/o-3.jpeg"
-        },
-        {
-            "artist": "Nathan Morgan",
-            "name": "Calm Sky",
-            "price": "$ 87.00",
-            "src": "./images/oil/o-4.jpeg"
-        },
-        {
-            "artist": "Stella Reed",
-            "name": "Hope Boat",
-            "price": "$ 132.00",
-            "src": "./images/oil/o-5.jpeg"
-        },
-        {
-            "artist": "Samuel Cooper",
-            "name": "Ocean in Head",
-            "price": "$ 159.00",
-            "src": "./images/oil/o-6.jpeg"
-        }
-    ],
-    "sea": [
-        {
-            "artist": "Grace Bailey",
-            "name": "Anime Sea",
-            "price": "$ 75.00",
-            "src": "./images/sea/s-1.jpeg"
-        },
-        {
-            "artist": "Oliver Carter",
-            "name": "Space Sea",
-            "price": "$ 196.00",
-            "src": "./images/sea/s-2.jpeg"
-        },
-        {
-            "artist": "Nora Murphy",
-            "name": "Sea Shells",
-            "price": "$ 120.00",
-            "src": "./images/sea/s-3.jpeg"
-        },
-        {
-            "artist": "Daniel Mitchell",
-            "name": "Mountain Dawn",
-            "price": "$ 111.00",
-            "src": "./images/sea/s-4.jpeg"
-        },
-        {
-            "artist": "Aria Ward",
-            "name": "Calm Sailing",
-            "price": "$ 64.00",
-            "src": "./images/sea/s-5.jpeg"
-        },
-        {
-            "artist": "Ruby Harrison",
-            "name": "The Lost Island",
-            "price": "$ 142.00",
-            "src": "./images/sea/s-6.jpeg"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "artist": "Ethan Collins",
+        "category": "anime",
+        "name": "Luifi Blue",
+        "price": "$ 69.00",
+        "src": "./images/anime/a-1.jpeg"
+    },
+    {
+        "id": 2,
+        "artist": "Sophia Ramirez",
+        "category": "anime",
+        "name": "Orange Katana",
+        "price": "$ 137.00",
+        "src": "./images/anime/a-2.jpeg"
+    },
+    {
+        "id": 3,
+        "artist": "Liam Patel",
+        "category": "anime",
+        "name": "Proud Cat",
+        "price": "$ 50.00",
+        "src": "./images/anime/a-3.jpeg"
+    },
+    {
+        "id": 4,
+        "artist": "Isabella Thompson",
+        "category": "anime",
+        "name": "Smiley Luifi",
+        "price": "$ 47.00",
+        "src": "./images/anime/a-4.jpeg"
+    },
+    {
+        "id": 5,
+        "artist": "Noah Martinez",
+        "category": "anime",
+        "name": "Big Eye",
+        "price": "$ 67.00",
+        "src": "./images/anime/a-5.jpeg"
+    },
+    {
+        "id": 6,
+        "artist": "Olivia Hernandez",
+        "category": "city",
+        "name": "Evening Last Light",
+        "price": "$ 180.00",
+        "src": "./images/city/c-1.jpeg"
+    },
+    {
+        "id": 7,
+        "artist": "James Parker",
+        "category": "city",
+        "name": "New York Afternoon",
+        "price": "$ 96.00",
+        "src": "./images/city/c-2.jpeg"
+    },
+    {
+        "id": 8,
+        "artist": "Mia Evans",
+        "category": "city",
+        "name": "Future City",
+        "price": "$ 119.00",
+        "src": "./images/city/c-3.jpeg"
+    },
+    {
+        "id": 9,
+        "artist": "Benjamin Wright",
+        "category": "city",
+        "name": "Big Ben",
+        "price": "$ 158.00",
+        "src": "./images/city/c-4.jpeg"
+    },
+    {
+        "id": 10,
+        "artist": "Amelia Davis",
+        "category": "digital",
+        "name": "Colorful Elephant",
+        "price": "$ 175.00",
+        "src": "./images/digital/d-1.jpeg"
+    },
+    {
+        "id": 11,
+        "artist": "Mason Clark",
+        "category": "digital",
+        "name": "Alexander The Great",
+        "price": "$ 125.00",
+        "src": "./images/digital/d-2.jpeg"
+    },
+    {
+        "id": 12,
+        "artist": "Lucas Turner",
+        "category": "digital",
+        "name": "Dawn First Light",
+        "price": "$ 140.00",
+        "src": "./images/digital/d-3.jpeg"
+    },
+    {
+        "id": 13,
+        "artist": "Harper Lewis",
+        "category": "digital",
+        "name": "Glory Tiger",
+        "price": "$ 41.00",
+        "src": "./images/digital/d-4.jpeg"
+    },
+    {
+        "id": 14,
+        "artist": "Elijah Baker",
+        "category": "digital",
+        "name": "Last Drink",
+        "price": "$ 119.00",
+        "src": "./images/digital/d-5.jpeg"
+    },
+    {
+        "id": 15,
+        "artist": "Avery Brooks",
+        "category": "games",
+        "name": "Artistic Spider",
+        "price": "$ 81.00",
+        "src": "./images/games/g-1.jpeg"
+    },
+    {
+        "id": 16,
+        "artist": "Alexander Scott",
+        "category": "games",
+        "name": "Last Solider",
+        "price": "$ 151.00",
+        "src": "./images/games/g-2.jpeg"
+    },
+    {
+        "id": 17,
+        "artist": "Evelyn Ross",
+        "category": "games",
+        "name": "Football Glory",
+        "price": "$ 113.00",
+        "src": "./images/games/g-3.jpeg"
+    },
+    {
+        "id": 18,
+        "artist": "Henry Anderson",
+        "category": "games",
+        "name": "Night Miles",
+        "price": "$ 194.00",
+        "src": "./images/games/g-4.jpeg"
+    },
+    {
+        "id": 19,
+        "artist": "Lily Foster",
+        "category": "oil",
+        "name": "Desperate Night",
+        "price": "$ 36.00",
+        "src": "./images/oil/o-1.jpeg"
+    },
+    {
+        "id": 20,
+        "artist": "Vincent van Gogh",
+        "category": "oil",
+        "name": "The Starry Night",
+        "price": "$ 200.00",
+        "src": "./images/oil/o-2.jpeg"
+    },
+    {
+        "id": 21,
+        "artist": "Zoe Bennett",
+        "category": "oil",
+        "name": "Lonely Evening",
+        "price": "$ 44.00",
+        "src": "./images/oil/o-3.jpeg"
+    },
+    {
+        "id": 22,
+        "artist": "Nathan Morgan",
+        "category": "oil",
+        "name": "Calm Sky",
+        "price": "$ 87.00",
+        "src": "./images/oil/o-4.jpeg"
+    },
+    {
+        "id": 23,
+        "artist": "Stella Reed",
+        "category": "oil",
+        "name": "Hope Boat",
+        "price": "$ 132.00",
+        "src": "./images/oil/o-5.jpeg"
+    },
+    {
+        "id": 24,
+        "artist": "Samuel Cooper",
+        "category": "oil",
+        "name": "Ocean in Head",
+        "price": "$ 159.00",
+        "src": "./images/oil/o-6.jpeg"
+    },
+    {
+        "id": 25,
+        "artist": "Grace Bailey",
+        "category": "sea",
+        "name": "Anime Sea",
+        "price": "$ 75.00",
+        "src": "./images/sea/s-1.jpeg"
+    },
+    {
+        "id": 26,
+        "artist": "Oliver Carter",
+        "category": "sea",
+        "name": "Space Sea",
+        "price": "$ 196.00",
+        "src": "./images/sea/s-2.jpeg"
+    },
+    {
+        "id": 27,
+        "artist": "Nora Murphy",
+        "category": "sea",
+        "name": "Sea Shells",
+        "price": "$ 120.00",
+        "src": "./images/sea/s-3.jpeg"
+    },
+    {
+        "id": 28,
+        "artist": "Daniel Mitchell",
+        "category": "sea",
+        "name": "Mountain Dawn",
+        "price": "$ 111.00",
+        "src": "./images/sea/s-4.jpeg"
+    },
+    {
+        "id": 29,
+        "artist": "Aria Ward",
+        "category": "sea",
+        "name": "Calm Sailing",
+        "price": "$ 64.00",
+        "src": "./images/sea/s-5.jpeg"
+    },
+    {
+        "id": 30,
+        "artist": "Ruby Harrison",
+        "category": "sea",
+        "name": "The Lost Island",
+        "price": "$ 142.00",
+        "src": "./images/sea/s-6.jpeg"
+    }
+]
