@@ -1,0 +1,67 @@
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #24353f;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(../../images/UpscaleImage_1_20240906.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+}
+.system-info {
+    width: 50%;
+    background-color: #a7c4d6;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+h2 {
+    color: #217c8a;
+    font-size: 2.5rem;
+}
+input {
+    background-color: #d8e4eb;
+    border: white 1px solid;
+    color: rgb(22, 38, 83);
+}
+::placeholder {
+    color: grey;
+    font-weight: 200
+}
+button {
+    color: #17a2b8 !important;
+    border: 1px #17a2b8 solid !important; 
+}
+button:hover {
+    background-color: #166a77 !important;
+    color: white !important;
+}
+p {
+    color: white;
+}
+p a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+p a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+.nav-bar {
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+.welcome-box {
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+.social-icons{
+    margin: 10px;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
